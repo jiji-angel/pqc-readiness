@@ -1,8 +1,8 @@
 # Crypto Inventory – PQC Readiness
 
-This folder demonstrates the ** first and most critical step ** in any Post‑Quantum Cryptography (PQC) migration:
+This folder demonstrates the **first and most critical step** in any Post‑Quantum Cryptography (PQC) migration:
 
- > ** Identifying where quantum‑vulnerable cryptography is used today. **
+ > **Identifying where quantum‑vulnerable cryptography is used today.**
 
 The goal is *visibility*, not replacement.
 
@@ -27,7 +27,7 @@ The TLS version (e.g., TLS 1.2 vs TLS 1.3) is **not hard‑coded**.
 
 Instead:
 
-* Python’s 'ssl' module delegates protocol support to the underlying **OpenSSL** library
+* Python’s `ssl` module delegates protocol support to the underlying **OpenSSL** library
 * During the TLS handshake, the server selects the highest mutually supported version
 * The program reports the negotiated result
 
@@ -63,12 +63,12 @@ TLS 1.3 distinguishes between:
 1. **Certificate signature algorithm** (X.509)
 2. **Handshake signature algorithm** (used during key exchange)
 
-Python’s standard 'ssl' interface does not reliably expose either for inspection.
+Python’s standard `ssl` interface does not reliably expose either for inspection.
 
 Real inventory tools address this by:
 
 * Parsing certificates directly (ASN.1)
-* Using specialized libraries (e.g., 'cryptography')
+* Using specialized libraries (e.g., `cryptography`)
 * Integrating OpenSSL tooling
 
 ---
@@ -107,7 +107,7 @@ Those belong to later migration phases.
 
 Possible extensions include:
 
-* Explicit certificate parsing using 'cryptography.x509'
+* Explicit certificate parsing using `cryptography.x509`
 * Multi‑endpoint scanning
 * Inventory report aggregation
 
