@@ -1,6 +1,6 @@
-#C rypto Inventory – PQC Readiness
+# Crypto Inventory – PQC Readiness
 
-This folder demonstrates the **first and most critical step** in any Post‑Quantum Cryptography (PQC) migration:
+This folder demonstrates the ** first and most critical step ** in any Post‑Quantum Cryptography (PQC) migration:
 
  > ** Identifying where quantum‑vulnerable cryptography is used today. **
 
@@ -10,7 +10,7 @@ The goal is *visibility*, not replacement.
 
 ## What this demo does
 
-The program 'crypto_inventory_demo.py':
+The program `crypto_inventory_demo.py`:
 
 * Establishes a real TLS connection to a target endpoint
 * Observes negotiated TLS parameters
