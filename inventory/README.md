@@ -1,8 +1,8 @@
-#Crypto Inventory – PQC Readiness
+#C rypto Inventory – PQC Readiness
 
 This folder demonstrates the **first and most critical step** in any Post‑Quantum Cryptography (PQC) migration:
 
- **Identifying where quantum‑vulnerable cryptography is used today.**
+ > ** Identifying where quantum‑vulnerable cryptography is used today. **
 
 The goal is *visibility*, not replacement.
 
